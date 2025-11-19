@@ -1,16 +1,43 @@
 // ---------------------------
 // 言語切替
 // ---------------------------
-const jaBtn = document.getElementById("jaBtn");
-const enBtn = document.getElementById("enBtn");
-jaBtn.onclick = () => switchLang("ja");
-enBtn.onclick = () => switchLang("en");
+// script.js
 
-function switchLang(lang) {
-    document.querySelectorAll("[data-ja]").forEach(el => {
-        el.textContent = el.getAttribute(`data-${lang}`);
+// 初期言語（デフォルト）
+// 初期言語
+let currentLang = "ja";
+
+// ページ読み込み時に全ての要素を書き換える
+window.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll("[data-ja]");
+    elements.forEach(el => {
+        el.innerText = el.getAttribute(`data-${currentLang}`);
     });
-}
+});
+
+
+// ページ内の全要素を取得
+const elements = document.querySelectorAll("[data-ja]");
+
+// 初期表示
+elements.forEach(el => {
+    el.innerText = el.getAttribute(`data-${currentLang}`);
+});
+
+// 言語切替ボタン
+document.getElementById("jaBtn").addEventListener("click", () => {
+    currentLang = "ja";
+    elements.forEach(el => {
+        el.innerText = el.getAttribute("data-ja");
+    });
+});
+
+document.getElementById("enBtn").addEventListener("click", () => {
+    currentLang = "en";
+    elements.forEach(el => {
+        el.innerText = el.getAttribute("data-en");
+    });
+});
 
 
 
