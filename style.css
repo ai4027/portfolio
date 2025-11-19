@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+/* 蝶の画像 */
+#butterfly-container img {
+    position: fixed;
+    width: 9%;
+    pointer-events: none;
+    will-change: transform;
+}
+
+/* 言語切り替え */
+.lang-switch {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 99;
+}
+
+.lang-switch button {
+    margin-left: 8px;
+}
+
+/* 以下あなたのデザインに応じて追記可能 */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.header ul {
+    display: flex;
+    gap: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.profile-photo {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* ---------------------------
+   背景：黒 → 紫グラデーション
+---------------------------- */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+
+    /* 黒 → 紫 の綺麗なグラデーション */
+    background: linear-gradient(to bottom, #000000, #3d0066, #6c00d9);
+    color: #ffffff;
+    text-align: center; /* 全体を中央寄せ */
+}
+
+/* ---------------------------
+   蝶アニメーション画像
+---------------------------- */
+#butterfly-container img {
+    position: fixed;
+    width: 9%;
+    pointer-events: none;
+    will-change: transform;
+    z-index: 5;
+}
+
+/* ---------------------------
+   言語スイッチ（右上固定）
+---------------------------- */
+.lang-switch {
+    position: fixed;
+    top: 80px;  /*高さを少し下げる*/
+    right: 20px;
+    z-index: 100;
+}
+
+.lang-switch button {
+    margin-left: 8px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: none;
+    background: #ffffffaa;
+    cursor: pointer;
+}
+
+/* ---------------------------
+   ヘッダー（中央寄せ）
+---------------------------- */
+.header {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.header nav a:hover {
+    color: #ffccff;
+    text-shadow: 0 0 10px #ff99ff;
+}
+
+/* ---------------------------
+   Hero セクション
+---------------------------- */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.profile-photo {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #ffffffaa;
+}
+
+.intro-video {
+    width: 60%;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid #ffffff55;
+}
+
+/* ---------------------------
+   各セクション
+---------------------------- */
+section {
+    padding: 60px 20px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 8px #d46bff;
+}
+
+p, li {
+    font-size: 18px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* ---------------------------
+   Works
+---------------------------- */
+.work-card {
+    background: #ffffff22;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    margin: 20px auto;
+    border: 1px solid #ffffff44;
+}
+
+/* ---------------------------
+   SNSリンク
+---------------------------- */
+.sns a {
+    margin: 0 10px;
+    color: #ffccff;
+    font-weight: bold;
+}
+
+/* ---------------------------
+   フッター
+---------------------------- */
+footer {
+    padding: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+}
