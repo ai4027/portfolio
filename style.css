@@ -37,9 +37,17 @@ body {
 }
 
 .hero {
+    position: relative; /* z-index を効かせるために追加 */
+    z-index: 20;        /* 蝶の z-index(5) より大きくする */
     text-align: center;
-    padding: 40px 0;
+    padding: 60px 20px;
 }
+
+section {
+    position: relative; /* 他のセクションも同様に追加可能 */
+    z-index: 20;
+}
+
 
 .profile-photo {
     width: 200px;
@@ -57,7 +65,7 @@ body {
 
     /* 黒 → 紫 の綺麗なグラデーション */
     background: linear-gradient(to bottom, #000000, #3d0066, #6c00d9);
-    color: #ffffff;
+    color: #adc6ff;
     text-align: center; /* 全体を中央寄せ */
 }
 
@@ -87,7 +95,7 @@ body {
     padding: 6px 12px;
     border-radius: 8px;
     border: none;
-    background: #ffffffaa;
+    background: #ffffff;
     cursor: pointer;
 }
 
